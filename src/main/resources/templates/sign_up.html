@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/sign_up/info}" method="post">
+    <div style="width:160px;"><label for="username">ユーザ名：</label></div>
+    <input type="text" name="username" autofocus="autofocus" />
+    <br/>
+    <div style="width:160px;"><label for="password">パスワード：</label></div>
+    <input type="password" name="password" />
+    <div style="width:160px;"><label for="mailAddress">email：</label></div>
+    <input type="text" name="mailAddress" autofocus="autofocus" />
+    <br/>
+    <p><input type="submit" value="登録" /></p>
+</form>
+</body>
+</html>
